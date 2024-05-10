@@ -1,0 +1,17 @@
+server:
+    port: 8070
+spring:
+    application:
+        name: schools
+    data:
+        mongodb:
+            uri: "mongodb+srv://optimus:optimus123@cluster0.d8cot9o.mongodb.net/schools"
+
+application:
+    config:
+        students-url: http://localhost:8222/api/v1/students
+
+management:
+    tracing:
+        sampling:
+            probability: 1.0

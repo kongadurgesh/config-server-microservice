@@ -1,0 +1,20 @@
+eureka:
+    instance:
+        hostname: localhost
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka
+
+server:
+    port: 8090
+spring:
+    application:
+        name: students
+    data:
+        mongodb:
+            uri: "mongodb+srv://optimus:optimus123@cluster0.d8cot9o.mongodb.net/students"
+
+management:
+    tracing:
+        sampling:
+            probability: 1.0
