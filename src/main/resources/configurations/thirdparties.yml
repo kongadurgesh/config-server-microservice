@@ -1,0 +1,15 @@
+server:
+    port: 8071
+spring:
+    data:
+        mongodb:
+            uri: "mongodb+srv://optimus:optimus123@cluster0.d8cot9o.mongodb.net/third_parties"
+
+application:
+    config:
+        issues-url: http://localhost:8222/issues
+
+management:
+    tracing:
+        sampling:
+            probability: 1.0

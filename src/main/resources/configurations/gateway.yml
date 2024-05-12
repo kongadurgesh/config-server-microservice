@@ -20,7 +20,16 @@ spring:
                   uri: http://localhost:8070
                   predicates:
                       - Path=/api/v1/schools/**
-
+                - id: thirdparties
+                  uri: http://localhost:8071
+                  predicates:
+                      - Path=/thirdparties/**
+                #   - Path=/swagger-ui/**
+                - id: issues
+                  uri: http://localhost:8091
+                  predicates:
+                      - Path=/issues/**
+                #       - Path=/swagger-ui/**
 management:
     tracing:
         sampling:
