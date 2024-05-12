@@ -7,7 +7,7 @@ spring:
 
 application:
     config:
-        issues-url: http://localhost:8222/issues
+        issues-url: http://localhost:8222/issues/external-sources
 
 management:
     tracing:
