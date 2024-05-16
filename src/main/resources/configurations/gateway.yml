@@ -16,6 +16,10 @@ spring:
                   uri: http://localhost:8090
                   predicates:
                       - Path=/api/v1/students/**
+                - id: security
+                  uri: http://localhost:8061
+                  predicates:
+                      - Path=/api/v1/auth/**
                 - id: schools
                   uri: http://localhost:8070
                   predicates:
